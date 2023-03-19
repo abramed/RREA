@@ -3,7 +3,7 @@ from __future__ import absolute_import
 from keras import activations, constraints, initializers, regularizers
 from keras import backend as K
 from keras.layers import Layer, Dropout, LeakyReLU
-import tensorflow as tf
+import tensorflow.compat.v1 as tf 
 import numpy as np
 
 class NR_GraphAttention(Layer):
